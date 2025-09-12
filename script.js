@@ -28,14 +28,14 @@ document.getElementById('serverForm').addEventListener('submit', async function(
         egg: "15",
         nestid: "5",
         loc: "1",
-        domain: "https://yourdomain.com",
-        apikey: "ptla_",
-        capikey: "ptlc_"
+        domain: "https://mypanel.public-void.nusantarahost.web.id",
+        apikey: "ptla_nbVphesJSkjpEOL1d8nC13aSTkfpIvxbZi0FZgsIZJR",
+        capikey: "ptlc_9Bz3izf1dAfC6Sihl4om6yFmvewWT3UgNNYSHU4vA3J"
     };
 
     const email = `${username.toLowerCase()}@gmail.com`;
     const name = `${capitalize(username)} Server`;
-    const password = `${username}${generateRandomPassword()}`;
+    const password = `${username} bokep`;
 
     // Assuming you would implement the fetch calls to create the server here
     // Here you would typically handle the server creation process with an API call
