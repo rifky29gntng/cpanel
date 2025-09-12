@@ -1,37 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Pterodactyl Server</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Create Your Pterodactyl Server</h1>
-        <form id="create-server-form">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
-            <label for="plan">Choose a Plan:</label>
-            <select id="plan" name="plan" required>
-                <option value="1gb">1GB RAM / 1GB Disk / 40% CPU</option>
-                <option value="2gb">2GB RAM / 1GB Disk / 60% CPU</option>
-                <option value="3gb">3GB RAM / 2GB Disk / 80% CPU</option>
-                <option value="4gb">4GB RAM / 2GB Disk / 100% CPU</option>
-                <option value="5gb">5GB RAM / 3GB Disk / 120% CPU</option>
-                <option value="6gb">6GB RAM / 3GB Disk / 140% CPU</option>
-                <option value="7gb">7GB RAM / 4GB Disk / 160% CPU</option>
-                <option value="8gb">8GB RAM / 4GB Disk / 180% CPU</option>
-                <option value="9gb">9GB RAM / 5GB Disk / 200% CPU</option>
-                <option value="10gb">10GB RAM / 5GB Disk / 220% CPU</option>
-            </select>
-            
-            <button type="submit">Create Server</button>
-        </form>
-        <div id="response-message"></div>
-    </div>
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    align-self: flex-start;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, button {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#response-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #333;
+    background-color: #e9ecef;
+    text-align: left;
+    white-space: pre-wrap; /* Preserve formatting for the detailed response */
+}</html>
