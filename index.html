@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Server Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Create Your Server Panel 🌟</h1>
+        <form id="serverForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="size">Select Server Size:</label>
+            <select id="size" name="size" required>
+                <option value="1gb">1 GB</option>
+                <option value="2gb">2 GB</option>
+                <option value="3gb">3 GB</option>
+                <option value="4gb">4 GB</option>
+                <option value="5gb">5 GB</option>
+                <option value="6gb">6 GB</option>
+                <option value="7gb">7 GB</option>
+                <option value="8gb">8 GB</option>
+                <option value="9gb">9 GB</option>
+                <option value="10gb">10 GB</option>
+                <option value="unlimited">Unlimited</option>
+                <option value="unli">Unli</option>
+            </select>
+            <button type="submit">Create Server</button>
+        </form>
+        
+        <div id="response" class="response"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
