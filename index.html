@@ -3,35 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Server Panel</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Create Pterodactyl Server</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>🌟 Create Your Server Panel 🌟</h1>
-        <form id="serverForm">
+        <h1>Create Your Pterodactyl Server</h1>
+        <form id="create-server-form">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-            
-            <label for="size">Select Server Size:</label>
-            <select id="size" name="size" required>
-                <option value="1gb">1 GB</option>
-                <option value="2gb">2 GB</option>
-                <option value="3gb">3 GB</option>
-                <option value="4gb">4 GB</option>
-                <option value="5gb">5 GB</option>
-                <option value="6gb">6 GB</option>
-                <option value="7gb">7 GB</option>
-                <option value="8gb">8 GB</option>
-                <option value="9gb">9 GB</option>
-                <option value="10gb">10 GB</option>
-                <option value="unlimited">Unlimited</option>
-                <option value="unli">Unli</option>
+
+            <label for="plan">Choose a Plan:</label>
+            <select id="plan" name="plan" required>
+                <option value="1gb">1GB RAM / 1GB Disk / 40% CPU</option>
+                <option value="2gb">2GB RAM / 1GB Disk / 60% CPU</option>
+                <option value="3gb">3GB RAM / 2GB Disk / 80% CPU</option>
+                <option value="4gb">4GB RAM / 2GB Disk / 100% CPU</option>
+                <option value="5gb">5GB RAM / 3GB Disk / 120% CPU</option>
+                <option value="6gb">6GB RAM / 3GB Disk / 140% CPU</option>
+                <option value="7gb">7GB RAM / 4GB Disk / 160% CPU</option>
+                <option value="8gb">8GB RAM / 4GB Disk / 180% CPU</option>
+                <option value="9gb">9GB RAM / 5GB Disk / 200% CPU</option>
+                <option value="10gb">10GB RAM / 5GB Disk / 220% CPU</option>
             </select>
+            
             <button type="submit">Create Server</button>
         </form>
-        
-        <div id="response" class="response"></div>
+        <div id="response-message"></div>
     </div>
 
     <script src="script.js"></script>
