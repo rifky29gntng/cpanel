@@ -1,53 +1,37 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Pterodactyl Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Pterodactyl Server</h1>
+        <form id="create-server-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+            <label for="plan">Choose a Plan:</label>
+            <select id="plan" name="plan" required>
+                <option value="1gb">1GB RAM / 1GB Disk / 40% CPU</option>
+                <option value="2gb">2GB RAM / 1GB Disk / 60% CPU</option>
+                <option value="3gb">3GB RAM / 2GB Disk / 80% CPU</option>
+                <option value="4gb">4GB RAM / 2GB Disk / 100% CPU</option>
+                <option value="5gb">5GB RAM / 3GB Disk / 120% CPU</option>
+                <option value="6gb">6GB RAM / 3GB Disk / 140% CPU</option>
+                <option value="7gb">7GB RAM / 4GB Disk / 160% CPU</option>
+                <option value="8gb">8GB RAM / 4GB Disk / 180% CPU</option>
+                <option value="9gb">9GB RAM / 5GB Disk / 200% CPU</option>
+                <option value="10gb">10GB RAM / 5GB Disk / 220% CPU</option>
+            </select>
+            
+            <button type="submit">Create Server</button>
+        </form>
+        <div id="response-message"></div>
+    </div>
 
-h1 {
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-input[type="text"],
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-.response {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: green;
-}
+    <script src="script.js"></script>
+</body>
+</html>
