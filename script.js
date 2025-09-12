@@ -11,8 +11,8 @@ app.use(express.static('.')); // To serve your HTML/CSS files
 const eggid = "15";
 const nestid = "5";
 const loc = "1";
-const domain = "https://your.pterodactyl.domain"; // <-- **CHANGE THIS**
-const apikey = "ptla_YOUR_API_KEY"; // <-- **CHANGE THIS**
+const domain = "https://mypanel.public-void.nusantarahost.web.id"; // <-- **CHANGE THIS**
+const apikey = "ptla_nbVphesJSkjpEOL1d8nC13aSTkfpIvxbZi0FZgsIZJR"; // <-- **CHANGE THIS**
 
 app.post('/create-server', async (req, res) => {
     const { username, plan } = req.body;
