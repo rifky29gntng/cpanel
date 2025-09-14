@@ -19,9 +19,9 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Configuration
-const apikey = 'isidewek';
-const capikey = 'isidewek';
-const domain = 'isidewek';
+const apikey = 'ptla_FLb1oGKdlEGtq0i1ITZ5e58ZSeYSzwNXTS2OZaSPYCW';
+const capikey = 'ptlc_5Ef41attfBIQPheVYNcmG7x883jqQeAceojUMd0csJd';
+const domain = 'https://hanzoiwoffc.parowl.online';
 const nestid = '5';
 const egg = '15';
 const loc = '1';
